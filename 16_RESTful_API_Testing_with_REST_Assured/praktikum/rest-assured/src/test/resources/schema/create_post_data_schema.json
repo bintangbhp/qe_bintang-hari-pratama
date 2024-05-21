@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$ref": "#/definitions/ResponseData",
+  "definitions": {
+    "ResponseData": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "integer"
+        },
+        "id": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "body",
+        "id",
+        "title",
+        "userId"
+      ],
+      "title": "ResponseData"
+    }
+  }
+}
